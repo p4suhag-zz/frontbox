@@ -25,7 +25,7 @@ body{
 	top: 0%;
 	left: 2.8%;
 	border: 0px solid black;
-	background-color: rgb(224,0,68);
+	background-color: rgb(0,139,213);
 	z-index: -1;
 	margin: 0px;
 }
@@ -50,14 +50,14 @@ div{
 	margin-left: 2%;
 	margin-right: 0px;
 	position: fixed;
-	background-color: rgb(224,0,68);
+	background-color: rgb(0,139,213);
 
 	font-size: 15px;
 }
 span{
 	position: absolute;
 	left: 200%;
-	color: rgb(255,63,74);
+	color: rgb(0,139,213);
 	opacity: 0.5;
 	font-family: 'Jura',sans-serif;
 }
@@ -114,7 +114,6 @@ section{
 	height: 80%;
 	width: 70%;
 	//background-color: red;
-	/*border: 2px solid white;*/
 	position: relative;
 	top: 8%;
 	left: 17%;
@@ -122,7 +121,6 @@ section{
 	font-family: 'Jura',sans-serif;
 	text-shadow: -1px 1px .2em rgba(138,0,80,.4),1px -1px .2em rgba(138,0,80,.4);
 	color: white;
-	/*font-size: 30px;*/
     font-weight: 40;
 	margin: auto;
 	padding: auto;
@@ -135,9 +133,7 @@ section{
 
 
 p{
-	/*position: relative;*/
-	/*top: 25%;*/
-	/*left: auto;*/
+	
 	font-size: 150%;
 	/*text-shadow: none;*/
 	font-weight: 100;
@@ -153,26 +149,26 @@ p{
 }
 #name{
 	font-size: 330%;
-	/*position: absolute;*/
-	top: 10%;
-	left: 22%;
+	
 	margin-bottom: 30px;
 	margin-top: 70px;
-	
+
 }
 
 #resume{
 	height: 50px;
 	width: 50px;
-	background-image: url("social/pdf.svg");
+	/*background-image: url("social/pdf.svg");*/
 	background-size: contain;
-	/*position: absolute;*/
-	top: 45%;
-	left: 47%;
+	border-radius: 50%;
 	margin-top: 90px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0;
+}
+#resume img{
+	height: 60px;
+	width: 60px;
 }
 #rtext{
 	font-size: 130%;
