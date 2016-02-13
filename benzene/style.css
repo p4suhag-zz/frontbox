@@ -10,7 +10,7 @@ body{
 	padding: 0px;
 	width: 100%;
 	height: 100%;
-	background-image: url('chemistry.jpg');
+	background-image: url('dark.jpeg');
 	background-size: cover;
 }
 
@@ -43,11 +43,11 @@ div{
 	height: 18px;
 	width: 18px;
 	border-radius: 50px;
-	border: 3px solid rgb(116,27,115);
-	margin-left: 10%;
+	border: 3px solid black;
+	margin-left: 2%;
 	margin-right: 0px;
-	position: relative;
-	background-color: rgb(0,164,227);
+	position: fixed;
+	background-color: white;
 
 	
 }
@@ -58,16 +58,16 @@ span{
 }
 
 #about{
-	top: 20%;
+	top: 25%;
 }
 #skills{
-	top: 30%;
+	top: 35%;
 }
 #work{
-	top: 40%;
+	top: 45%;
 }
 #blog{
-	top: 50%;
+	top: 55%;
 }
 
 
@@ -107,11 +107,38 @@ section{
 	height: 80%;
 	width: 70%;
 	//background-color: red;
-	border: 2px solid white;
+	//border: 2px solid white;
 	position: relative;
 	top: 8%;
 	left: 17%;
-	
+	font-family: 'Montserrat', sans-serif;
+	text-shadow: -1px 1px .2em rgba(25,0,0,.4),1px -1px .4em rgba(255,255,255,.4);
+	color: white;
+	font-size: 60px;
+    font-weight: 500;
+    letter-spacing: -4px;
+    text-align: center;
 
+}
+h1{
+    position: absolute;
+    top: -10%;
+    left: 10%;
+}
+#red{
+	position: relative;
+	left: 5%;
+	
+	color: white;
+}
+p{
+	position: relative;
+	top: 20%;
+	left: auto;
+	font-size: 30px;
+	text-shadow: none;
+	font-weight: 100;
+	color: white;
+	letter-spacing: 10px;
 
 }
