@@ -1,17 +1,19 @@
 html{
 	height: 100%;
 	width: 100%;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 
 body{
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	width: 100%;
 	height: 100%;
 	background-image: url('dark.jpeg');
 	background-size: cover;
+	-webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 
@@ -22,7 +24,7 @@ body{
 	top: 0%;
 	left: 2.8%;
 	border: 0px solid black;
-	background-color: rgb(0.164,227);
+	background-color: rgb(224,0,68);
 	z-index: -1;
 	margin: 0px;
 }
@@ -47,14 +49,19 @@ div{
 	margin-left: 2%;
 	margin-right: 0px;
 	position: fixed;
-	background-color: white;
+	background-color: rgb(224,0,68);
 
-	
+	font-size: 15px;
 }
 span{
 	position: absolute;
 	left: 200%;
-	color: white;
+	color: rgb(255,63,74);
+	opacity: 0.2;
+	font-family: 'Jura',sans-serif;
+}
+span:hover{
+	opacity: 0.9;
 }
 
 #about{
@@ -62,6 +69,7 @@ span{
 }
 #skills{
 	top: 35%;
+
 }
 #work{
 	top: 45%;
@@ -77,8 +85,8 @@ span{
 
 .footer{
 	position: fixed;
-	height: 70%;
-	width: 20%;
+	height: 500px;
+	width: 100px;
 	top: 30%;
 	right: 0%;
 	background-color: transparent;
@@ -91,10 +99,8 @@ span{
 	height: 30px;
 	width: 30px;
 	margin: 15px;
-	left: 70%;
 	background-color: transparent;
 	border-color: transparent;
-
 }
 img{
 	height: 30px;
@@ -107,38 +113,64 @@ section{
 	height: 80%;
 	width: 70%;
 	//background-color: red;
-	//border: 2px solid white;
+	/*//border: 2px solid white;*/
 	position: relative;
 	top: 8%;
 	left: 17%;
-	font-family: 'Montserrat', sans-serif;
-	text-shadow: -1px 1px .2em rgba(25,0,0,.4),1px -1px .4em rgba(255,255,255,.4);
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-family: 'Jura',sans-serif;
+	text-shadow: -1px 1px .2em rgba(25,0,0,.4),1px -1px .2em rgba(255,255,255,.4);
 	color: white;
-	font-size: 60px;
-    font-weight: 500;
-    letter-spacing: -4px;
+	font-size: 30px;
+    font-weight: 40;
+	margin-right: 0;
+	margin-left: 0;
+    letter-spacing: 4px;
     text-align: center;
 
 }
-h1{
-    position: absolute;
-    top: -10%;
-    left: 10%;
-}
-#red{
-	position: relative;
-	left: 5%;
-	
-	color: white;
-}
+
+
 p{
 	position: relative;
-	top: 20%;
+	top: 25%;
 	left: auto;
 	font-size: 30px;
-	text-shadow: none;
+	/*text-shadow: none;*/
 	font-weight: 100;
-	color: white;
+	color: rgb(138,0,80);
 	letter-spacing: 10px;
+	line-height: 40px;
+	margin-top: 1px;
 
 }
+#name{
+	font-size: 55px;
+	position: absolute;
+	top: 10%;
+	left: 22%;
+	margin: 0;
+}
+
+#resume{
+	height: 50px;
+	width: 50px;
+	background-image: url("social/pdf.svg");
+	background-size: contain;
+	position: absolute;
+	top: 45%;
+	left: 47%;
+}
+#rtext{
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: 0;
+	position: relative;
+	top: 42%;
+	left: 0;
+	/*font-family: "Lato", Arial, Helvetica, sans-serif;*/
+	font-family: 'Jura',sans-serif;
+	color: rgba(138,0,80,0.75);
+}
+
+
