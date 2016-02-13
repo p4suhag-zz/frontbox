@@ -14,6 +14,7 @@ body{
 	background-size: cover;
 	-webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  display: block;
 }
 
 
@@ -113,7 +114,7 @@ section{
 	height: 80%;
 	width: 70%;
 	//background-color: red;
-	/*//border: 2px solid white;*/
+	/*border: 2px solid white;*/
 	position: relative;
 	top: 8%;
 	left: 17%;
@@ -121,35 +122,43 @@ section{
 	font-family: 'Jura',sans-serif;
 	text-shadow: -1px 1px .2em rgba(138,0,80,.4),1px -1px .2em rgba(138,0,80,.4);
 	color: white;
-	font-size: 30px;
+	/*font-size: 30px;*/
     font-weight: 40;
-	margin-right: 0;
-	margin-left: 0;
+	margin: auto;
+	padding: auto;
     letter-spacing: 4px;
     text-align: center;
+    display: inline-block;
+
 
 }
 
 
 p{
-	position: relative;
-	top: 25%;
-	left: auto;
-	font-size: 30px;
+	/*position: relative;*/
+	/*top: 25%;*/
+	/*left: auto;*/
+	font-size: 150%;
 	/*text-shadow: none;*/
 	font-weight: 100;
 	color: rgb(138,0,80);
 	letter-spacing: 10px;
 	line-height: 40px;
-	margin-top: 1px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	width: auto;
+	height: 50px;
 
 }
 #name{
-	font-size: 55px;
-	position: absolute;
+	font-size: 330%;
+	/*position: absolute;*/
 	top: 10%;
 	left: 22%;
-	margin: 0;
+	margin-bottom: 30px;
+	margin-top: 70px;
+	
 }
 
 #resume{
@@ -157,17 +166,19 @@ p{
 	width: 50px;
 	background-image: url("social/pdf.svg");
 	background-size: contain;
-	position: absolute;
+	/*position: absolute;*/
 	top: 45%;
 	left: 47%;
+	margin-top: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
 }
 #rtext{
-	font-size: 20px;
+	font-size: 130%;
 	letter-spacing: 1px;
 	font-weight: 0;
-	position: relative;
-	top: 42%;
-	left: 0;
+	margin-top: 1px;
 	/*font-family: "Lato", Arial, Helvetica, sans-serif;*/
 	font-family: 'Jura',sans-serif;
 	color: rgba(138,0,80,0.75);
