@@ -114,7 +114,7 @@ section{
 	height: 80%;
 	width: 70%;
 	/*//background-color: red;*/
-	position: relative;
+	position: fixed;
 	top: 8%;
 	left: 17%;
 	/*font-family: 'Montserrat', sans-serif;*/
@@ -183,5 +183,63 @@ p{
 }
 
 
+#lovehead{
+	margin-top: 50px;
+	font-size: 300%;
+}
+#lovetail{
+	margin-top: 50px;
+	font-size: 200%;
+}
 
+#labhead{
+	margin-top: 150px;
+	margin-bottom: 120px;
+}
+#worktail p{
+	font-size: 100%;
+}
+#labhead img{
+	height: 150px;
+	width: 150px;
+
+}
+
+#medium{
+	margin-top: 200px;
+	margin-bottom: 60px;
+}
+#blogtail p{
+	font-size: 100%;
+	letter-spacing: 5px;
+}
+#medium img{
+	height: 90px;
+	width: 90px;
+}
+
+.home_section{
+	visibility: hidden;
+}
+.hometail{
+	visibility: visible;
+}
+.love_section{
+	visibility: hidden;
+}
+.lovetail{
+	visibility: visible;
+}
+.work_section{
+	visibility: hidden;
+}
+.worktail{
+	visibility: visible;
+}
+.blog_section{
+	visibility: hidden;
+}
+.blogtail{
+	visibility: visible;
+}
 

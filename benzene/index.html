@@ -29,13 +29,13 @@
         <nav class="navbar">
 
         	<div id="about"><span>ABOUT</span></div>
-        	<div id="love"><span>LOVE</span></div>
-        	<div id="work"><span>WORK</span></div>
+        	<div id="love"><span>INTERESTS</span></div>
+        	<div id="work"><span>LAB</span></div>
         	<div id="blog"><span>BLOG</span></div>
         	
         </nav>
         
-        <section class="about_section">
+        <section class="hometail" id="hometail">
             <p id="name">PARVEEN  SUHAG  </p>
 
             <p>Front End Developer</p>
@@ -43,6 +43,24 @@
             <p id="rtext">Resume</p>
             
         </section>
+
+        <section class="love_section" id="lovetail">
+             <p id="lovehead">I love </p>
+             <p id="what">Basketball</p>
+        </section>
+
+        <section class="work_section" id="worktail">
+            <p id="labhead"><a target="_blank" href="https://github.com/parveensuhag"><img src="fly.svg"></a></p>
+            <p>Enter the Lab</p>
+        </section>
+
+        <section class="blog_section" id="blogtail">
+            <p id="medium"><a target="_blank" href="https://medium.com/@p4suhag"><img src="medium.png"></a></p>
+            <p>Writer is Burning</p>
+        </section>
+
+
+
 
         
 
@@ -64,23 +82,99 @@
         
 
 
-
-
-
-
-
-
-
-
-
-
-
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+         <script type="text/javascript">
+            $(document).ready(function(){
+                console.log("jhjhjhj");
+    $("#love").hover(function(){
+        $("#lovetail").removeClass("love_section");
+        $("#lovetail").addClass("lovetail");
+        $("#hometail").removeClass("hometail");
+        $("#hometail").addClass("home_section");
+        $("#worktail").removeClass("worktail");
+        $("#worktail").addClass("work_section");
+        $("#blogtail").removeClass("blogtail");
+        $("#blogtail").addClass("blog_section");
+    });
+});
+
+             $(document).ready(function(){
+    $("#about").hover(function(){
+        $("#hometail").removeClass("home_section");
+        $("#hometail").addClass("hometail");
+        $("#lovetail").removeClass("lovetail");
+        $("#lovetail").addClass("love_section");
+        $("#worktail").removeClass("worktail");
+        $("#worktail").addClass("work_section");
+        $("#blogtail").removeClass("blogtail");
+        $("#blogtail").addClass("blog_section");
+    });
+});     
+
+             $(document).ready(function(){
+                console.log("jhjhjhj");
+    $("#work").hover(function(){
+        $("#lovetail").removeClass("lovetail");
+        $("#lovetail").addClass("love_section");
+        $("#hometail").removeClass("hometail");
+        $("#hometail").addClass("home_section");
+        $("#worktail").removeClass("work_section");
+        $("#worktail").addClass("worktail");
+        $("#blogtail").removeClass("blogtail");
+        $("#blogtail").addClass("blog_section");
+    });
+});
+             $(document).ready(function(){
+                console.log("jhjhjhj");
+    $("#blog").hover(function(){
+        $("#lovetail").removeClass("lovetail");
+        $("#lovetail").addClass("love_section");
+        $("#hometail").removeClass("hometail");
+        $("#hometail").addClass("home_section");
+        $("#worktail").removeClass("worktail");
+        $("#worktail").addClass("work_section");
+        $("#blogtail").removeClass("blog_section");
+        $("#blogtail").addClass("blogtail");
+    });
+});
+        </script>
 
         <script type="text/javascript">
-            jQuery('#name').html("I love to code.");
+            $(function () {
+    var hello = ['Basketball', 'HTML', 'CSS', 'Wild Life', 'JavaScript', 'Arduino', 'Photography', 'Movies'];
+    var used = ['Basketball'];
+    var greeting = $('#what');
+    var item;
+    
+    function hey() {
+        item = hello[Math.floor(Math.random() * hello.length)];
+        if (hello.length != used.length) {
+            while (jQuery.inArray(item, used) != -1) {
+                item = hello[Math.floor(Math.random() * hello.length)];
+            }
+            used.push(item);
+        } else {
+            used.length = 0;
+            item = hello[Math.floor(Math.random() * hello.length)];
+            used.push(item);
+        }
+        greeting.html(item);
+        greeting.animate({
+            "opacity": "1"
+        }, 500);
+
+        
+    }
+
+    window.setInterval(function () {
+        
+        greeting.animate({
+            "opacity": "0"
+        }, 500);
+        setTimeout(hey, 900);
+    }, 2000);
+
+});
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
