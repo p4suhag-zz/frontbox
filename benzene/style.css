@@ -243,3 +243,115 @@ p{
 	visibility: visible;
 }
 
+
+
+
+
+/*Code for Responsive*/
+
+@media screen and (max-width: 1050px){
+    
+    #name{
+    	font-size: 200%;
+    }
+    p{
+    	font-size: 100%;
+    }
+    .navbar div{
+    	font-size: 80%;
+    }
+	.footer div{
+		right: -15%;
+	}
+	#lovehead{
+		font-size: 250%;
+	}
+	#lovetail{
+		font-size: 150%;
+	}
+	#labhead img{
+		height: 100px;
+		width: 100px;
+	}
+	#labhead{
+	    margin-top: 150px;
+	    margin-bottom: 100px;
+	}
+
+}
+
+@media screen and (max-width: 700px){
+	#name{
+    	font-size: 160%;
+    }
+    p{
+    	font-size: 90%;
+    }
+    .navbar div{
+    	font-size: 70%;
+    }
+	.footer div{
+		right: -15%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#name{
+    	font-size: 180%;
+    	margin-bottom: 40px;
+    }
+    p{
+    	font-size: 100%;
+		
+    }
+    .navbar div{
+    	font-size: 60%;
+    }
+	.footer div{
+		right: -15%;
+	}
+	#lovehead{
+		font-size: 200%;
+		margin-top: 60px;
+		margin-bottom: 30px;
+	}
+	#lovetail{
+		font-size: 150%;
+	}
+	#labhead img{
+		height: 60px;
+		width: 60px;
+	}
+	#labhead{
+	    margin-top: 150px;
+	    margin-bottom: 50px;
+	}
+	#worktail p{
+		font-size: 80%; 
+	}
+	#medium{
+	margin-top: 200px;
+	margin-bottom: 40px;
+}
+#blogtail p{
+	font-size: 80%;
+	letter-spacing: 3px;
+}
+#medium img{
+	height: 70px;
+	width: 70px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
